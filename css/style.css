@@ -1,0 +1,46 @@
+html,body {
+    position: relative;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+.viewport {height:100%;}
+.viewport-half {height:50%; background-color:blue; width: 100%; }
+
+
+.card {height: 100%; width: 100%;margin:0;border:1px solid #000;}
+
+.img-fluid {height:100%;} /* temp until I get fix. Try 150% and crop? Parent is 100%? Need none css solution*/
+
+.footer {padding-top:20px;}
+#myCarousel,.carousel,.slide,.carousel-item,.active{height:100%;}
+.carousel-inner{height:100%;}
+.container-fluid {padding:0;}
+
+a {color:#fff;}
+
+
+.navbar {background-color: #000;}
+/* glitchy at transition to landscape in browser
+@media (min-width: 576px) and (max-width: 767px) {.col-sm-6.col-md-6.col-lg-4.viewport-half { height:100% }}*/
+
+/*
+@media (orientation: landscape) {.col-sm-6.col-md-6.col-lg-4.viewport-half { height:100% }}
+
+.fix {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    overflow: auto;
+}
+
+ADD parent divs to each for practice and good practice.
+*/
