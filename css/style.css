@@ -1,46 +1,93 @@
+/*
+Theme Name: GRIM
+Author: Travis Roberts
+Description:
+Version: 0.0.1
+Tags: bootstrap
+*/
+
+
 html,body {
     position: relative;
     height: 100%;
     background-color: #000;
     color: #fff;
+    margin:0!important;
+    padding:0!important;
+    width:100%;
+}
+/* FULL SCREEN MODAL STYLES
+    -------------------------------------------------- */
+.fullscreen .modal-dialog {
+    margin: 0 0 0 0;
+    min-width: 100%;
+    height: 100%;
+    min-height: 100%;
+    padding: 0;
+    color: #333;
 }
 
+.fullscreen .modal-content {
+    height: 100%;
+    min-height: 100%;
+    border-radius: 0;
+    color: #333;
+    background: rgba(255, 255, 255, 0.97);
+    overflow:auto;
+}
+
+.fullscreen .modal-body ul {
+    padding: 100px 0 0 0;
+}
+
+.fullscreen .modal-body li {
+    padding: 10px 0 10px 0 ;
+}
+
+.fullscreen .modal-body a {
+    color: #333;
+    font-size: 300%;
+}
+
+@media (max-width: 480px){
+    .fullscreen .modal-body ul {
+        padding: 30px 0 0 0;
+        overflow: auto;
+    }
+
+    .fullscreen .modal-body li {
+        padding: 4px 0 4px 0 ;
+    }
+
+    .fullscreen .modal-body a {
+        color: #333;
+        font-size: 200%;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}
 
 
 .viewport {height:100%;}
 .viewport-half {height:50%; background-color:blue; width: 100%; }
 
 
-.card {height: 100%; width: 100%;margin:0;border:1px solid #000;}
+.card {height: 100%; width: 100%;margin:0;border:1px solid #fff;}
 
 .img-fluid {height:100%;} /* temp until I get fix. Try 150% and crop? Parent is 100%? Need none css solution*/
 
 .footer {padding-top:20px;}
-#myCarousel,.carousel,.slide,.carousel-item,.active{height:100%;}
+#myCarousel,.carousel,.slide,.carousel-item,.active{height:100%;min-width: 100%!important;}
 .carousel-inner{height:100%;}
 .container-fluid {padding:0;}
 
-a {color:#fff;}
+a,i{color:#000;}
+
+.navbar-brand {color:#000!important;}
+
+.navbar, .footer {background:#fff; color:#000;}
 
 
-.navbar {background-color: #000;}
 /* glitchy at transition to landscape in browser
 @media (min-width: 576px) and (max-width: 767px) {.col-sm-6.col-md-6.col-lg-4.viewport-half { height:100% }}*/
 
-/*
-@media (orientation: landscape) {.col-sm-6.col-md-6.col-lg-4.viewport-half { height:100% }}
-
-.fix {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    max-width: 100%;
-    max-height: 100%;
-    margin: auto;
-    overflow: auto;
-}
-
-ADD parent divs to each for practice and good practice.
-*/
